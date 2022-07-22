@@ -1,0 +1,28 @@
+git add 'task3_test.txt'
+git commit -m "file tasks3_test.txt was added"
+git push origin main
+git checkout -b develop
+git checkout -b develop2
+git add 'task3_test.txt'
+git commit -m "First line was added"
+git push origin develop
+git push origin develop2
+
+
+
+EPAM+Olga_Valiuk@EPESMALW02C1 MINGW64 ~/Desktop/python/git_test
+git clone https://github.com/olgavaliuk1/python_course.git
+cd python_course
+git checkout develop
+git checkout -b develop3
+git add 'task3_test.txt'
+git commit -m "Adding another new first line"
+git push origin develop3
+git checkout develop
+git merge origin/develop2
+git push origin develop
+git merge origin/develop3
+git add 'task3_test.txt'
+git commit -m "Resolved merge conflict"
+git push origin develop
+
